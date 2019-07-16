@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.novel.dao.novelMapper">
+
+<select id="getnovelBytype"  resultType="novel"  parameterType="String">
+   select * from novel where type=#{type} limit 0,10
+</select>
+<select id="getnovelByid"  resultType="novel"  parameterType="String">
+   select * from novel where id=#{id}
+</select>
+</mapper>
